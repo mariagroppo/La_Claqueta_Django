@@ -1,0 +1,383 @@
+/* ------------------------------------------------------------------------------------------ */
+
+/* NAV ----------------------------------------------------------------------------- */
+.capa1{
+    z-index: 1000;
+    font-family: 'Alegreya Sans', sans-serif
+}
+
+.navbar_icons_zone {
+    display:none
+}
+
+.containerHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header {
+    background: #160032;
+    color: white;
+    padding: 1em 0;
+    /* position: relative; */
+    box-shadow: 7px 7px 20px 0 rgb(75, 74, 74);
+}
+
+.logo {
+    width: 120px;
+    margin: 0;
+    padding: 0;
+}
+
+.site_nav ul {
+    display: flex;
+    margin:0;
+    padding: 0;
+    list-style: none;
+}
+
+.site_nav li {
+    text-align: center;
+    margin-left: 10px;
+    /* box-shadow: 2px 2px 5px 0 rgb(203, 196, 196); */
+    box-shadow: 0 2px 0 0 rgb(203, 196, 196);
+}
+
+.site_nav a {
+    color: white;
+    display: block;
+    padding: 1em 2em;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.site_nav a:hover,
+.site_nav a:focus {
+    color: rgb(138, 138, 42);
+}
+
+.iconClass {
+    display: inline-block;
+    font-size: 1.5em;
+    margin-right: 1em;
+    width: 1.1em;
+    text-align: right;
+    color: white;
+}
+
+/* ------------------------------------------------------------------------------------------ */
+
+/* FOOTER ---------------------------------------------------------------------------------- */
+.footer-section {
+    padding-top: 50px;
+}
+
+footer {
+    font-size:small;
+    font-family: 'Alegreya Sans', sans-serif;
+    background: #160032;
+    color: white;
+}
+
+.quick-links-container{
+    margin-left: 20px;
+}
+
+.quick-link-list {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+.quick-link-list li a {
+    color: #fff;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.footer-title {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #f7bb07;
+    font-size: 10px;
+    margin-bottom: 23px;
+    font-weight: 700;
+    position: relative;
+    padding: 20px;
+}
+
+.footer-section-bottom {
+    padding: 17px 0px;
+}
+
+.about-us{
+    padding-left: 20px;
+}
+
+#social {
+    margin: 20px 10px;
+    text-align: center;
+}
+
+.smGlobalBtn {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #ddd;
+    box-shadow: 0 3px 3px #999;
+    padding: 0px;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    font-size: 22px;
+    font-weight: normal;
+    line-height: 2em;
+    border-radius: 27px;
+    -moz-border-radius: 27px;
+    -webkit-border-radius: 27px;
+}
+
+/* facebook button class*/
+.facebookBtn:hover {
+    color: #4060A5;
+    background: #fff;
+    border-color: #4060A5;
+}
+
+/* twitter button class*/
+.twitterBtn:hover {
+    color: #00ABE3;
+    background: #fff;
+    border-color: #00ABE3;
+}
+
+/* linkedin button class*/
+.linkedinBtn:hover {
+    color: #0094BC;
+    background: #fff;
+    border-color: #0094BC;
+}
+
+/* Instagram button class*/
+.instagramBtn:hover {
+    color: #0094BC;
+    background: #fff;
+    border-color: #0094BC;
+}
+
+.newsletter-container{
+    margin-right: 20px;
+}
+
+.newsletter {
+    padding-left: 20px;
+}
+
+.form-group {
+    padding: 10px;
+}
+
+.subscribe {
+    width: 100%;
+    border-radius: 0px;
+    background: #24829f;
+    border: 1px solid #6ac5e1;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
+/* ------------------------------------------------------------------------------------------ */
+
+/* BOARD   -------------------------------------------------------------------------- */
+
+.board-container{
+    font-family: 'Alegreya Sans', sans-serif;
+    background: #160032;
+    color: white;
+}
+
+.addBtn_container{
+    padding: 10px;
+}
+
+.containerPeliculas{
+    padding:20px;
+}
+
+.section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.tarjeta{
+    display:flex;
+    justify-content: space-between;
+    background: #160032;
+    flex-direction:column;
+    width: 250px;
+    border: 1px solid lightgray;
+    box-shadow: 2px 2px 8px 4px #d3d3d3d1;
+    border-radius:15px;
+    font-family: sans-serif;
+    margin: 20px;
+    margin-bottom: 20px;
+}
+
+.posterImg {
+    width: 100%;
+    height: auto;
+    align-items:start;
+    border-radius: 5%;
+}
+
+.pie{
+    background: #78004E;
+    border-radius:0 0 15px 15px;
+    padding: 10px;
+    text-align:center;
+    color: white
+  }
+  
+.pie p{
+    text-decoration: none;
+    color: white;
+    margin: 0;
+}
+
+/* ------------------------------------------------------------------------------------------ */
+
+/* FILM DETAIL -------------------------------------------------------------------------- */
+
+.containerFilm{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    font-family: 'Alegreya Sans', sans-serif;
+    background: #160032;
+    color: white;
+}
+
+.container-title {
+    display: flex;
+    justify-content: center;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.container-img {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+
+.infoFilm{
+    font-weight: bolder;
+}
+
+.container-info{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.container-video{
+    display: flex;
+    justify-content: center;
+}
+
+.filmImage {
+    width: 300px;
+}
+
+
+.bookForm {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.bookForm_1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.ticketsQty input{
+    width: 30px;
+    text-align: center;
+    color: white;
+}
+
+.ticketsQty label{
+    padding-right: 10px;
+}
+
+.ticketsQty, .dayTime {
+    font-weight: bolder;
+    margin: 10px
+}
+
+.ticketsQty {
+    display: flex;
+    flex-direction: row;
+}
+
+.ticketsQty1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.dayTime label{
+    padding-right: 10px;
+}
+
+.dayTime select, .ticketsQty input {
+    background: rgb(73, 72, 72);
+}
+
+.btnRest, .btnSum {
+    background: #78004E
+}
+
+.qtyInput {
+    color: white;
+}
+
+
+/* ------------------------------------------------------------------------------------------ */
+
+/* CONTACTO -------------------------------------------------------------------------- */
+
+.containerForm{
+    padding: 20px;
+    font-family: 'Alegreya Sans', sans-serif;
+    background: #160032;
+    color: white;
+}
+
+/* ------------------------------------------------------------------------------------------ */
+
+/* PANTALLA CHICA -------------------------------------------------------------------------- */
+@media (max-width:810px) {
+    /* NAV BAR -------------------------------- */
+    .navbar_icons_zone {
+        display: inline-block;
+        margin-right: 20px;
+    }
+
+    .navbar_icon {
+        width: 50px;
+        margin: 0;
+        padding: 10px;
+    }
+
+    .site_nav {
+        display: none;
+    }
+ 
+}
+
+

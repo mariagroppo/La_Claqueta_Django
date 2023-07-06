@@ -1,0 +1,66 @@
+{% extends 'layout.html' %}
+
+{% load static %}
+
+{% block content %}
+
+
+<main class="board-container">
+
+    {% if user.is_authenticated and user.is_superuser %}
+    <div class="addBtn_container">
+        <a class="btn btn-primary" href="/board/addFilm" role="button">Agregar película</a>
+    </div>
+    {% endif %}
+    
+    <div class="containerPeliculas">
+        <div>
+            <p>ESTA SEMANA</p>
+            <div class="section" id="respuesta">
+                {% for film in films %}
+                {% if film.estreno %}
+                <div class="tarjeta">
+                    <a href="/board/{{film.id}}"><img class= "posterImg" src=".{{ context }}{{ film.thumbnail }}" alt="{{film.title}}" ></a>
+                    <div class="pie">
+                        <p>ESTA SEMANA</p>
+                    </div>
+                    {% if user.is_authenticated and user.is_superuser %}
+                    <div class="m-2">
+                        <a class="link-danger link-offset-3 mx-2" href="/board/deleteFilm/{{film.id}}">Borrar</a>
+                        <a class="link-warning link-offset-3" href="/board/updateFilm/{{film.id}}">Actualizar</a>
+                    </div>
+                    {% endif %}
+                    
+                </div>
+                {% endif %}
+                {% endfor %}
+            </div>      
+        </div>
+        <div>
+            <p>CLÁSICOS</p>
+            <div class="section" id="respuesta2">
+                {% for film in films %}
+                {% if not film.estreno %}
+                <div class="tarjeta">
+                    <a href="/board/{{film.id}}"><img class= "posterImg" src=".{{ context }}{{ film.thumbnail }}" alt="{{film.title}}" ></a>
+                    
+                    {% if user.is_authenticated and user.is_superuser %}
+                    <div class="m-2">
+                        <a class="link-danger link-offset-3 mx-2" href="/board/deleteFilm/{{film.id}}">Borrar</a>
+                        <a class="link-warning link-offset-3" href="/board/updateFilm/{{film.id}}">Actualizar</a>
+                    </div>
+                    {% endif %}
+                </div>
+                {% endif %}
+                {% endfor %}
+            </div>     
+        </div>
+    </div>
+
+</main>
+
+
+
+
+
+{% endblock %}

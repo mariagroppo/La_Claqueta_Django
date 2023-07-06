@@ -1,0 +1,22 @@
+{% load static %}
+
+<header class="capa1">
+ 
+    <div class="containerHeader">
+      <div class="containerLogo">
+        <a href="{% url 'landing_page' %}"><img class= "logo" src="{% static 'img/logo.jpeg' %}" alt="logo"></a>  
+      </div>
+      <div id="site-nav" class="site_nav">
+          <ul>
+              <li><a href="{% url 'landing_page' %}"><i class="iconClass icon-star-empty"></i>Home</a></li>
+              <li><a href="{% url 'board_page' %}"><i class="iconClass icon-calendar"></i>Cartelera</a></li>
+              <li><a href="{% url 'contact_page' %}"><i class="iconClass icon-earth"></i>Contacto</a></li>
+          </ul>
+      </div>
+      <div class="navbar_icons_zone">
+        <a href="{% url 'board_page' %}"><img class="navbar_icon" src="https://cdn.icon-icons.com/icons2/1146/PNG/512/1486485582-311arrow-film-movie-play-player-start-video_81177.png" alt=""></a>
+        <a href="{% url 'contact_page' %}"><img class="navbar_icon" src="https://cdn.icon-icons.com/icons2/2170/PNG/512/gmail_google_mail_email_icon_133230.png" alt=""></a>
+      </div>
+  </div>
+
+</header>

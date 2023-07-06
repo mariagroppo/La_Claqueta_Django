@@ -1,0 +1,55 @@
+{% load static %}
+
+<footer class="footer-section">
+    <div>
+      <div class="d-flex row">
+          <div class="col-md-3">
+              <p class="footer-title">Quick Links</p>
+              <ul class="quick-link-list">
+                  <li><a href="{% url 'landing_page' %}">Home</a></li>
+                  <li><a href="{% url 'board_page' %}">Cartelera</a></li>
+                  <li><a href="{% url 'contact_page' %}">Contacto</a></li>
+              </ul>
+          </div>
+          <div class="col-md">
+              <p class="footer-title">Sobre nosotros</p>
+              <p class="about-us">Somos un grupo de apacionados por el cine, que decidió compatir los mejores momentos del cine con vos y que los disfrtes en una sala de cine en lugar de tu casa.</p>
+              <div id="social">
+                <img src="{% static './img/facebook.png' %}" alt="" class="facebookBtn smGlobalBtn">
+                <img src="{% static './img/twitter.png' %}" alt="" class="twitterBtn smGlobalBtn">  
+                <img src="{% static './img/linkedin.png' %}" alt="" class="linkedinBtn smGlobalBtn">
+                <img src="{% static './img/instagram.png' %}" alt="" class="instagramBtn smGlobalBtn">
+              </div>
+          </div>
+
+          <div class="newsletter-container col-md-3">
+              <p class="footer-title"><span class="footer-title-text">NEWSLETTER</span></p>
+              <p class="newsletter">Inscribete en nuestro newsletter.</p>
+              <div class="form-group">
+                <input type="email" class="form-control form-control-new" id="useremail" name="useremail" placeholder="Enter Your Mail" required>
+                <button type="button" onclick="suscribeFunction()" id="suscribeBtn" class="btn btn-primary subscribe">Suscribirme.</button>
+            </div>
+          </div>
+      </div>
+  </div>
+  </div>
+  <div class="footer-section-bottom">
+    <div class="container">
+      <div class="row">
+          <div class="col-md-6 footer-bottom-left">
+              <p>© All Rights Reserved Python Group 11.</p>
+          </div>
+          <div class="col-md-6 footer-bottom-right">
+              <p>Developed by <a href="#">Python Group 11.</a></p>
+          </div>
+      </div>
+  </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+<script src="{% static 'js/main.js' %}"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>
+

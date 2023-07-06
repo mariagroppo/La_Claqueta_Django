@@ -1,0 +1,63 @@
+{% extends 'layout.html' %}
+
+{% load static %}
+
+{% block content %}
+<div class="containerFilm">
+    <div class="container-title">
+        <h1>{{film.title}}</h1>
+    </div>
+
+    <div class="container-img">
+        <div class="imgFilm">
+            <img class="filmImage" src=".{{ context }}{{ film.thumbnail }}" alt="">    
+        </div>
+        <div class="filmDetails">
+            <span class="spanClass">{{film.accessAllowed}}</span>
+            <div>
+                <ul>
+                    <li><span class="infoFilm">GÉNERO:</span> {{film.gender}}</li>
+                    <li><span class="infoFilm">DURACIÓN:</span> {{film.duration}}</li>
+                    <li><span class="infoFilm">ACTORES:</span> {{film.actors}}</li>
+                    <li><span class="infoFilm">DIRECTOR:</span> {{film.director}}</li>
+                </ul>
+            </div>
+        </div>
+        <div class="layout2">
+            <div class="container-info">
+                <p>{{film.description}}</p>
+            </div>
+            <div class="container-video">
+                <div class="videoStyle">
+                    <iframe src={{film.trailer}} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+            </div>
+            {% if film.estreno %}
+            <div class="bookForm">
+                <div class="bookForm_1">
+                    <form action="/board/booking" method="post" enctype=multipart/form-data>
+                        {% csrf_token %}
+                        {{ form.as_p }}
+                        {{ message }}
+                        <button type="submit" id="addFilmButton">Reservar</button>
+                    </form>
+                    
+                    <div class="m-2">
+                        <a class="btn btn-primary" href="/board" role="button">Volver</a>
+                    </div>
+                </div>
+
+            </div>
+
+            {% endif %}
+            
+        </div>
+
+        
+        
+
+    </div>
+
+</div>
+
+{% endblock %}

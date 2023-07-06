@@ -1,0 +1,75 @@
+/* 
+.
+.container-img{
+    display: flex;
+    flex-direction: row;
+}
+
+.filmImage {
+    width: 300px;
+}
+
+.spanClass {
+    font-weight: 700;
+    margin-left: 10px;
+} */
+
+/* 
+.btnRest, .btnSum {
+    color: black;
+    font-weight: 700;
+    background-color: red;
+}
+
+.spanTickets {
+    font-size: 10px;
+}
+.ticketsQty input{
+    width: 30px;
+    text-align: center;
+    color: white;
+}
+
+.ticketsQty label{
+    padding-right: 10px;
+}
+
+.ticketsQty, .dayTime {
+    font-weight: bolder;
+    margin: 10px
+}
+
+.ticketsQty {
+    display: flex;
+    flex-direction: row;
+}
+
+.ticketsQty1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.dayTime label{
+    padding-right: 10px;
+}
+
+.dayTime select, .ticketsQty input {
+    background: rgb(73, 72, 72);
+}
+
+.btnRest, .btnSum {
+    background: #78004E
+}
+
+.qtyInput {
+    color: white;
+}
+
+.capa1{
+    z-index: 1000;
+}
+
+.capa2{
+    z-index: 0;
+}
+ */

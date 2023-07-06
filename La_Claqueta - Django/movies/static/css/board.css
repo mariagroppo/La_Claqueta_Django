@@ -1,0 +1,61 @@
+.containerPeliculas{
+    margin:20px;
+  }
+  
+.containerPeliculas div p {
+    font-size:20px;
+}
+  
+.tarjeta{
+    display:flex;
+    justify-content: space-between;
+    background: #160032;
+    flex-direction:column;
+    width: 250px;
+    border: 1px solid lightgray;
+    box-shadow: 2px 2px 8px 4px #d3d3d3d1;
+    border-radius:15px;
+    font-family: sans-serif;
+    margin: 20px;
+    margin-bottom: 20px;
+  }
+
+.titulo{
+    font-size: 20px;
+    text-align: center;
+    padding: 10px 10px 0 10px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.cuerpo{
+    padding: 10px;
+    font-size: 12px;
+  }
+
+.pie{
+    background: #78004E;
+    border-radius:0 0 15px 15px;
+    padding: 10px;
+    text-align:center;
+    color: white
+  }
+  
+.pie p{
+    text-decoration: none;
+    color: white;
+    margin: 0;
+}
+
+.posterImg {
+    width: 100%;
+    height: auto;
+    align-items:start;
+    border-radius: 5%;
+}
+
+.section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }

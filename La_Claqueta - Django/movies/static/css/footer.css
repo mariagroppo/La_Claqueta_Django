@@ -1,0 +1,137 @@
+
+
+footer {
+    font-size:small;
+    background: #160032;
+}
+
+.footer-section {
+    padding-top: 80px;
+    background: #160032;
+}
+
+.quick-link-list {
+    list-style-type: none;
+    padding: 0px;
+}
+
+.quick-link-list li a {
+    color: #fff;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.footer-title {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #f7bb07;
+    font-size: 10px;
+    margin-bottom: 23px;
+    font-weight: 700;
+    position: relative;
+}
+
+.footer-title-text {
+    z-index: 999;
+    position: relative;
+}
+
+.newsletter {
+    color: #fff;
+}
+
+.footer-section-bottom {
+    padding: 17px 0px;
+}
+
+.footer-bottom-left p {
+    margin: 0px;
+    color: #fff;
+}
+
+.footer-bottom-right p {
+    margin: 0px;
+    color: #fff;
+    text-align: right;
+}
+
+.footer-bottom-right p a {
+    color: #dcd735;
+}
+
+#social {
+    margin: 20px 10px;
+    text-align: center;
+}
+
+.smGlobalBtn {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #ddd;
+    box-shadow: 0 3px 3px #999;
+    padding: 0px;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    font-size: 22px;
+    font-weight: normal;
+    line-height: 2em;
+    border-radius: 27px;
+    -moz-border-radius: 27px;
+    -webkit-border-radius: 27px;
+}
+/* facebook button class*/
+.facebookBtn:hover {
+    color: #4060A5;
+    background: #fff;
+    border-color: #4060A5;
+}
+
+/* twitter button class*/
+.twitterBtn:hover {
+    color: #00ABE3;
+    background: #fff;
+    border-color: #00ABE3;
+}
+
+/* linkedin button class*/
+.linkedinBtn:hover {
+    color: #0094BC;
+    background: #fff;
+    border-color: #0094BC;
+}
+
+/* Instagram button class*/
+.instagramBtn:hover {
+    color: #0094BC;
+    background: #fff;
+    border-color: #0094BC;
+}
+
+
+.form-control-new {
+    border-radius: 0px;
+    position: relative;
+}
+
+.form-control-new:before {
+    content: "/f0e0";
+    font-family: FontAwesome;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+.subscribe {
+    width: 100%;
+    border-radius: 0px;
+    background: #24829f;
+    border: 1px solid #6ac5e1;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
