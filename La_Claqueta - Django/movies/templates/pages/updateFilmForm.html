@@ -4,15 +4,15 @@
 
 {% block content %}
 
-<div class="containerForm">
-    <form action="" method="post" enctype=multipart/form-data>
-        {% csrf_token %}
-        {{ form.as_p }}
-        <button type="submit" id="addFilmButton">Actualizar</button>
-    </form>
-    
-    <div class="m-2">
-        <a class="btn btn-primary" href="/board" role="button">Volver</a>
+<div class="containerContactForm">
+    <div>
+        <form action="" method="post" enctype=multipart/form-data>
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button class="contactFormBtn type="submit" id="">Actualizar</button>
+            <a class="contactFormBtn" href="/board" role="button">Volver</a>
+        </form>
     </div>
 </div>
+
 {% endblock %}

@@ -28,36 +28,31 @@
                 <p>{{film.description}}</p>
             </div>
             <div class="container-video">
-                <div class="videoStyle">
-                    <iframe src={{film.trailer}} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                </div>
+                <iframe class="videoStyle" src={{film.trailer}} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
             {% if film.estreno %}
-            <div class="bookForm">
-                <div class="bookForm_1">
+            <div class="containerContactForm">
+                <div class="">
                     <form action="/board/booking" method="post" enctype=multipart/form-data>
                         {% csrf_token %}
                         {{ form.as_p }}
-                        {{ message }}
-                        <button type="submit" id="addFilmButton">Reservar</button>
+                        
+                        <button class="contactFormBtn" type="submit" id="addFilmButton">Reservar</button>
+                        <a class="contactFormBtn" href="/board" role="button">Volver</a>
                     </form>
-                    
-                    <div class="m-2">
-                        <a class="btn btn-primary" href="/board" role="button">Volver</a>
-                    </div>
+
                 </div>
 
             </div>
 
             {% endif %}
-            
         </div>
-
-        
-        
-
     </div>
-
+    {% if not film.estreno %}
+    <div class="btn-container">
+        <a class="contactFormBtn" href="/board" role="button">Volver</a>
+    </div>
+    {% endif %}
 </div>
 
 {% endblock %}

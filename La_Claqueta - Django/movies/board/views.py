@@ -95,8 +95,8 @@ class UpdateFilmView(TemplateView):
 
 class BookingFilm(TemplateView):
     def post(self, request):
-        form = BookFilmForm(request.POST)
-        print(request.POST)
+        form = BookFilmForm(request.POST.copy())
+        form.data['schedule'] = "zasa"
         if form.is_valid():
             form.save()
             messages.success(request, 'Se ha enviado un correo con los pasos a seguir. Muchas gracias por la reserva!')
