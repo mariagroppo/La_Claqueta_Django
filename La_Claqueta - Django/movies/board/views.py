@@ -92,11 +92,14 @@ class UpdateFilmView(TemplateView):
             formulario.save()
         return redirect('/board')
 
+from datetime import datetime
 
 class BookingFilm(TemplateView):
     def post(self, request):
-        form = BookFilmForm(request.POST.copy())
-        form.data['schedule'] = "zasa"
+        value = request.POST.copy()
+        value['booking_date']=datetime.now().strftime("%Y-%m-%d")
+        print(value)
+        form = BookFilmForm(value)
         if form.is_valid():
             form.save()
             messages.success(request, 'Se ha enviado un correo con los pasos a seguir. Muchas gracias por la reserva!')

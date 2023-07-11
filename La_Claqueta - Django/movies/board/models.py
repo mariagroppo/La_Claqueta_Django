@@ -32,8 +32,8 @@ class Contact(models.Model):
 
 
 class Booking(models.Model):
-    booking_date = DateField(editable=False, auto_now_add=True)
-    email = EmailField(blank=False)
-    tickets_quantity = IntegerField(blank=False)
-    film =  CharField("Pelicula", max_length=150, default='No film added.', editable=False)
+    booking_date = CharField("Fecha Booking", max_length=150, default=None)
+    email = EmailField("Email", blank=False)
+    tickets_quantity = IntegerField("Cantidad", blank=False)
+    #film =  CharField("Pelicula", max_length=150, default='No film added.', editable=False)
     schedule = CharField("Agenda", max_length=150, default='No schedule added.')

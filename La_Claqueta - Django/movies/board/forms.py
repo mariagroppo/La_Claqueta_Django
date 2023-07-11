@@ -24,4 +24,4 @@ class BookFilmForm(forms.ModelForm):
 
     class Meta:
         model = Booking
-        fields = '__all__'
+        exclude = ['booking_date']
